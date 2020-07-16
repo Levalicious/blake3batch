@@ -42,7 +42,7 @@ unsigned char* blake3batch(unsigned char* input, const unsigned int n, const uns
     unsigned int i;
     size_t source_size;
 
-    char* source_str = readFile("../kernels/vector_blake3_kernel.cl", &source_size);
+    char* source_str = readFile("blake3_kernel.cl", &source_size);
 
 
     // Get platform and device information
